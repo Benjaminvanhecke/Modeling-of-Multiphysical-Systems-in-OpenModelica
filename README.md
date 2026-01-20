@@ -4,8 +4,11 @@ Modeling of Multiphysical Systems in OpenModelica: An Electric Bicycle
 **Neural Network Models**
 
 Two Python implementations were developed to model the human torque law:
+
 • A feed-forward Multi-Layer Perceptron (MLP): model mlp.py
+
 • A recurrent Gated Recurrent Unit (GRU) network: model gru.py
+
 
 The scripts allow for configurable feature selection, sequence length, and training
 parameters. The complete preprocessing, training, validation, and export pipeline was
