@@ -1,7 +1,8 @@
 # Modeling-of-Multiphysical-Systems-in-OpenModelica
 Modeling of Multiphysical Systems in OpenModelica: An Electric Bicycle
 
-Neural Network Models
+**Neural Network Models**
+
 Two Python implementations were developed to model the human torque law:
 • A feed-forward Multi-Layer Perceptron (MLP): model mlp.py
 • A recurrent Gated Recurrent Unit (GRU) network: model gru.py
@@ -12,7 +13,7 @@ implemented by the author. The predicted torque can be exported and used as an i
 to the OpenModelica bicycle model, enabling a direct comparison between simulations
 driven by measured torque and by predicted human torque.
 
-OpenModelica Bicycle Model
+**OpenModelica Bicycle Model**
 
 The longitudinal bicycle dynamics were implemented in OpenModelica using standard
 mechanical components. The model, longitudinal bicycle.mo, computes the bicycle
