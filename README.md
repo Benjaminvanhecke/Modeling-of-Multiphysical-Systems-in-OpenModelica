@@ -1,5 +1,5 @@
 # Modeling-of-Multiphysical-Systems-in-OpenModelica
-Modeling of Multiphysical Systems in OpenModelica: An Electric Bicycle
+_An Electric Bicycle_
 
 **Neural Network Models**
 
