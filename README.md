@@ -24,8 +24,7 @@ driven by measured torque and by predicted human torque.
 
 The longitudinal bicycle dynamics were implemented in OpenModelica using standard
 mechanical components. The model, longitudinal_bicycle.mo (in the ./Implementation folder), computes the bicycle
-velocity from an applied wheel torque, accounting for aerodynamic drag, rolling resis-
-tance, road inclination, and inertial effects.
+velocity from an applied wheel torque, accounting for aerodynamic drag, rolling resistance, road inclination, and inertial effects.
 
 The implementation serves as a validated baseline model and as a foundation for future
 extensions toward an electric bicycle, including motor and battery subsystems
