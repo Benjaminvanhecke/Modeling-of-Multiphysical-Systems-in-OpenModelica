@@ -1,4 +1,4 @@
-model Minimalistic_1
+model longitudinal_bicycle
   import Modelica.Units.SI;
   import Modelica.Constants.g_n;
   parameter SI.Mass m = 80 "Mass of vehicle";
@@ -11,7 +11,7 @@ model Minimalistic_1
   parameter Real CrConstant = 0.009 "Constant Cr";
   parameter Real inclinationConstant = 0 "Constant inclination = tan(angle)";
   parameter SI.Velocity vReg = 1e-3 "Velocity for regularization around 0";
-  Modelica.Blocks.Sources.CombiTimeTable Table(tableOnFile = true, tableName = "TimeTorqueInclinationSpeed_rad_tanPrediction", fileName = "C:/Users/skipp/Documents/school/ModelicaProject/Implementation/TimeTorqueInclinationSpeed_rad_tanPrediction.txt", extrapolation = Modelica.Blocks.Types.Extrapolation.HoldLastPoint, columns = {2, 3, 4, 5}) annotation(
+  Modelica.Blocks.Sources.CombiTimeTable Table(tableOnFile = true, tableName = "TimeTorqueInclinationSpeed_rad_tanPrediction", fileName = "YOUR_FILE_PATH/TimeTorqueInclinationSpeed_rad_tanPrediction.txt", extrapolation = Modelica.Blocks.Types.Extrapolation.HoldLastPoint, columns = {2, 3, 4, 5}) annotation(
     Placement(transformation(origin = {-86, 12}, extent = {{-10, -10}, {10, 10}})));
   Modelica.Mechanics.Translational.Sources.QuadraticSpeedDependentForce fDrag(final ForceDirection = false, final f_nominal = -Cd*A*rho*Vref^2/2, final useSupport = true, final v_nominal = Vref) "Drag resistance" annotation(
     Placement(transformation(origin = {14, -31}, extent = {{50, -40}, {70, -20}})));
@@ -77,4 +77,5 @@ equation
     Dialog(enable = false));
   annotation(
     uses(Modelica(version = "4.0.0")));
-end Minimalistic_1;
+end longitudinal_bicycle;
+
