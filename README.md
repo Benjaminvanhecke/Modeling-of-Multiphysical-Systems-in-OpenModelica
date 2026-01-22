@@ -19,7 +19,7 @@ driven by measured torque and by predicted human torque.
 **OpenModelica Bicycle Model**
 
 The longitudinal bicycle dynamics were implemented in OpenModelica using standard
-mechanical components. The model, longitudinal bicycle.mo, computes the bicycle
+mechanical components. The model, longitudinal_bicycle.mo (in the ./Implementation folder), computes the bicycle
 velocity from an applied wheel torque, accounting for aerodynamic drag, rolling resis-
 tance, road inclination, and inertial effects.
 
